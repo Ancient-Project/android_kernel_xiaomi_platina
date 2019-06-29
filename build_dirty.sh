@@ -19,7 +19,7 @@ KERNEL_DIR=$PWD
 REPACK_DIR=$KERNEL_DIR/zip
 OUT=$KERNEL_DIR/out
 ZIP_NAME="$VERSION"-"$DATE"
-VERSION="platina"
+VERSION="platina-beta"
 DATE=$(date +%Y%m%d-%H%M)
 
 export KBUILD_BUILD_USER=builder
@@ -44,7 +44,7 @@ make_zip()
                 rm $KERNEL_DIR/out/arch/arm64/boot/dts/qcom/modules.order
                 cp $KERNEL_DIR/out/arch/arm64/boot/dts/qcom/* $REPACK_DIR/dtbs/
                 cp $KERNEL_DIR/out/arch/arm64/boot/Image.gz $REPACK_DIR/kernel/
-		FINAL_ZIP="Perf-${VERSION}-${DATE}.zip"
+		FINAL_ZIP="Ancient-EAS-${VERSION}-${DATE}.zip"
         zip -r9 "${FINAL_ZIP}" *
 		cp *.zip $OUT
 		rm *.zip
