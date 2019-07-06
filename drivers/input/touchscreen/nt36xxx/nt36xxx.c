@@ -1773,12 +1773,14 @@ static DEVICE_ATTR(grip_area, (S_IRUGO | S_IWUSR | S_IWGRP),
 static DEVICE_ATTR(wake_gesture, S_IWUSR | S_IRUSR,
 		nvt_panel_wake_gesture_show, nvt_panel_wake_gesture_store);
 
+
 static struct attribute *nvt_attr_group[] = {
 	&dev_attr_panel_vendor.attr,
 	&dev_attr_panel_color.attr,
 	&dev_attr_panel_display.attr,
 	&dev_attr_grip_area.attr,
 	&dev_attr_wake_gesture.attr,
+	NULL,
 };
 
 static ssize_t novatek_input_symlink(struct nvt_ts_data *ts) {
