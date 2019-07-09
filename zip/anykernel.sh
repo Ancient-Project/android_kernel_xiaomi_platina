@@ -4,15 +4,15 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Testing
+kernel.string=Ancient Kernel From Indonesia
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=platina
 device.name2=platina-user
-device.name3=
-device.name4=
+device.name3=MI 8 Lite
+device.name4=Xiaomi
 device.name5=
 '; } # end properties
 
