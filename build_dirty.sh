@@ -19,7 +19,7 @@ KERNEL_DIR=$PWD
 REPACK_DIR=$KERNEL_DIR/zip
 OUT=$KERNEL_DIR/out
 ZIP_NAME="$VERSION"-"$DATE"
-VERSION="platina-GlobStable-1.2"
+VERSION="platina-GlobStable-1.3"
 DATE=$(date +%Y%m%d-%H%M)
 
 export KBUILD_BUILD_USER=builder
