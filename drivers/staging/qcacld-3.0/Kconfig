@@ -152,6 +152,10 @@ config WLAN_FEATURE_FILS
 	bool "Enable FILS_SK feature"
 	default n
 
+config WLAN_FEATURE_FIPS
+	bool "Add support to fallback the PMKID generation from firmware to wpa_supplicant"
+	default n
+
 config FEATURE_PKTLOG
 	bool "Packet log"
 	default n
